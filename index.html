@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Swiggy Clone</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<h2 class="logo">SWIGGY</h2>
+
+<ul class="nav-menu">
+
+<li class="dropdown">
+Home
+<div class="dropdown-content">
+<a href="#">Popular Food</a>
+<a href="#">Top Rated</a>
+<a href="#">Nearby</a>
+</div>
+</li>
+
+<li class="dropdown">
+Restaurants
+<div class="dropdown-content">
+<a href="#">Indian</a>
+<a href="#">Italian</a>
+<a href="#">Chinese</a>
+<a href="#">Fast Food</a>
+</div>
+</li>
+
+<li onclick="openCart()">Cart</li>
+
+</ul>
+<button id="darkModeToggle">🌙 Dark Mode</button>
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Order Delicious Food</h1>
+<p>Discover the best restaurants near you</p>
+
+<div class="search-box">
+
+<input id="searchInput" placeholder="Search restaurant">
+
+<button onclick="searchRestaurant()">Search</button>
+
+</div>
+
+</section>
+
+
+<!-- FOOD CATEGORIES -->
+
+<section class="categories">
+
+<h2>Food Categories</h2>
+
+<div class="category-grid">
+
+<div class="category">🍕 Pizza</div>
+<div class="category">🍔 Burger</div>
+<div class="category">🍜 Noodles</div>
+<div class="category">🍛 Indian</div>
+<div class="category">🍰 Desserts</div>
+
+</div>
+
+</section>
+
+
+<!-- RESTAURANTS -->
+
+<h2 class="section-title">Popular Restaurants</h2>
+
+<div id="restaurant-list" class="restaurant-grid"></div>
+
+
+<!-- CART MODAL -->
+
+<div id="cartModal" class="cart-modal">
+
+<div class="cart-content">
+
+<h2>Your Cart</h2>
+
+<div id="cartItems"></div>
+
+<button onclick="closeCart()">Close</button>
+
+</div>
+
+</div>
+
+<section class="contact-section">
+
+<h2>Contact Us</h2>
+
+<p>We would love to hear your feedback!</p>
+
+<form id="contactForm">
+
+<input type="text" id="name" placeholder="Your Name" required>
+
+<input type="email" id="email" placeholder="Your Email" required>
+
+<textarea id="message" placeholder="Your Feedback" required></textarea>
+
+<button type="submit">Submit Feedback</button>
+
+</form>
+
+<p id="successMsg"></p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Swiggy Clone</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
